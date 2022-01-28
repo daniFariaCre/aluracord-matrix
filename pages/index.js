@@ -68,6 +68,8 @@ export default function PaginaInicial() {
             onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               //console.log('Alguém submeteu o form');
+              chatPage(username);
+              
               roteamento.push('/chat');
               // window.location.href = '/chat';
             }}
